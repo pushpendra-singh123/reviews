@@ -6,16 +6,15 @@ public class PhoneRecharge {
         int totalRecharge = 0;
         boolean nextRecharge = true;
 
-        System.out.println("You want to recharge your SIM write  your response as true or false");
-        boolean firstRecharge = sc.nextBoolean();
+        System.out.println("Welcome to Recahrge Simulation System");
 
-        while (firstRecharge) {
+        while (true) {
             while (nextRecharge) {
                 System.out.println("Choose Your Recharge");
                 System.out.println("1 " + "JIO");
                 System.out.println("2 " + "Airtel");
                 System.out.println("3 " + "BSNL");
-
+                System.out.println("4 " + " Show Balance");
 //                System.out.println("You want to recharge write  your response as true or false");
 
                 System.out.println("Choose your Recharge ");
@@ -35,8 +34,10 @@ public class PhoneRecharge {
                     System.out.println("BSNL Recharge of amount Rs : " + amount + " is Successfu");
                     totalRecharge += amount;
                 }
+                else if (choice == 4) {
+                    System.out.println("Your balance amount till now is Rs : " + totalRecharge);
+                }
 
-                System.out.println("Your balance amount till now is Rs : " + totalRecharge);
                 System.out.println("Want to recharge? (true/false)");
             nextRecharge = sc.nextBoolean();
             if (nextRecharge == false) {
@@ -46,10 +47,10 @@ public class PhoneRecharge {
 
         }
             if (!nextRecharge) {
-            firstRecharge = false;
+                break;
             }
         }
-        System.out.println("Total amount for Recharge is RS : "+totalRecharge);
+//        System.out.println("Total amount for Recharge is RS : "+totalRecharge);
 
 
     }
