@@ -5,8 +5,7 @@ public class PhoneRecharge {
         Scanner sc = new Scanner(System.in);
         int totalRecharge = 0;
         boolean nextRecharge = true;
-
-        System.out.println("Welcome to Recahrge Simulation System");
+        System.out.println("Welcome to Recharge Simulation System");
 
         while (true) {
             while (nextRecharge) {
